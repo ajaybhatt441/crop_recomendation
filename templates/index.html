@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+
+    <!-- Javascript -->
+    <script src="{{url_for('static', filename='js/app.js')}}"></script>
+
+    <title>Weather</title>
+</head>
+<body>
+
+    <img id="settings-btn" src="{{url_for('static', filename='img/settings.svg')}}" alt="">
+
+    <section class="dropdown">
+        <div id="system">
+            <h4>System</h4>
+            <button id="metric" class="active">Metric</button>
+            <button id="imperial">Imperial</button>
+        </div>
+        
+        <div id="backgrounds">
+            <h4>Backgrounds</h4>
+            <div>
+                <span>Clear</span>
+                <img src="{{url_for('static', filename='img/clear-day-mini.svg')}}" alt="">
+            </div>
+            <div>
+                <span>Clouds</span>
+                <img src="{{url_for('static', filename='img/clear-day-mini.svg')}}" alt="">
+            </div>
+            <div>
+                <span>Rain</span>
+                <img src="{{url_for('static', filename='img/clear-day-mini.svg')}}" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="close-dropdown"></div>
+
+    <section class="forecast">
+        <h2 class="description">Weather description</h2>
+        <h1 class="location">City</h1>
+        <h2 class="temperature">--</h2>
+    </section>
+
+    <section class="five-day-forecast">
+        <div id="current-day"></div>
+        
+        <ul>
+            <li>
+                <span class="day">Day 1</span>
+                <div>
+                    <span class="temp">--</span>
+                    <img src="" alt="" class="weather-img">
+                </div>
+            </li>
+
+            <div class="details">
+                <span>10/10/2019</span>
+
+                <h4>Overcast clouds</h4>
+
+                <div class="min-max-temp">
+                    <span>Max temp</span>
+                    <span class="max-temp">30</span>
+
+                    <span>Min temp</span>
+                    <span class="min-temp">25</span>
+                </div>
+
+                <div class="humidity-wind">
+                    <span>Humidity</span>
+                    <span class="humidity">70%</span>
+
+                    <span>Wind</span>
+                    <img src="{{url_for('static', filename='img/arrow.svg')}}" alt="">
+                    <span class="wind">10km/h</span>
+                </div>
+            </div>
+
+            <li>
+                <span class="day">Day 2</span>
+                <div>
+                    <span class="temp">--</span>
+                    <img src="" alt="" class="weather-img">
+                </div>
+            </li>
+
+            <div class="details">
+                <span>10/10/2019</span>
+
+                <h4>Overcast clouds</h4>
+
+                <div class="min-max-temp">
+                    <span>Max temp</span>
+                    <span class="max-temp">30</span>
+
+                    <span>Min temp</span>
+                    <span class="min-temp">25</span>
+                </div>
+
+                <div class="humidity-wind">
+                    <span>Humidity</span>
+                    <span class="humidity">70%</span>
+
+                    <span>Wind</span>
+                    <img src="static/img/arrow.svg" alt="">
+                    <span class="wind">10km/h</span>
+                </div>
+            </div>
+
+            <li>
+                <span class="day">Day 3</span>
+                <div>
+                    <span class="temp">--</span>
+                    <img src="" alt="" class="weather-img">
+                </div>
+            </li>
+
+            <div class="details">
+                <span>10/10/2019</span>
+
+                <h4>Overcast clouds</h4>
+
+                <div class="min-max-temp">
+                    <span>Max temp</span>
+                    <span class="max-temp">30</span>
+
+                    <span>Min temp</span>
+                    <span class="min-temp">25</span>
+                </div>
+
+                <div class="humidity-wind">
+                    <span>Humidity</span>
+                    <span class="humidity">70%</span>
+
+                    <span>Wind</span>
+                    <img src="{{url_for('static', filename='img/arrow.svg')}}" alt="">
+                    <span class="wind">10km/h</span>
+                </div>
+            </div>
+
+            <li>
+                <span class="day">Day 4</span>
+                <div>
+                    <span class="temp">--</span>
+                    <img src="" alt="" class="weather-img">
+                </div>
+            </li>
+
+            <div class="details">
+                <span>10/10/2019</span>
+
+                <h4>Overcast clouds</h4>
+
+                <div class="min-max-temp">
+                    <span>Max temp</span>
+                    <span class="max-temp">30</span>
+
+                    <span>Min temp</span>
+                    <span class="min-temp">25</span>
+                </div>
+
+                <div class="humidity-wind">
+                    <span>Humidity</span>
+                    <span class="humidity">70%</span>
+
+                    <span>Wind</span>
+                    <img src="{{url_for('static', filename='img/arrow.svg')}}" alt="">
+                    <span class="wind">10km/h</span>
+                </div>
+            </div>
+
+            <li>
+                <span class="day">Day 5</span>
+                <div>
+                    <span class="temp">--</span>
+                    <img src="" alt="" class="weather-img">
+                </div>
+            </li>
+            
+            <div class="details">
+                <span>10/10/2019</span>
+
+                <h4>Overcast clouds</h4>
+
+                <div class="min-max-temp">
+                    <span>Max temp</span>
+                    <span class="max-temp">30</span>
+
+                    <span>Min temp</span>
+                    <span class="min-temp">25</span>
+                </div>
+
+                <div class="humidity-wind">
+                    <span>Humidity</span>
+                    <span class="humidity">70%</span>
+
+                    <span>Wind</span>
+                    <img src="{{url_for('static', filename='img/arrow.svg')}}" alt="">
+                    <span class="wind">10km/h</span>
+                </div>
+            </div>
+        </ul>
+    </section>
+
+    <footer></footer>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Crop Recommendation System</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Capriola">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shanti">    </head>
+    <body style="background-repeat:no-repeat;
+                 background-size: 100% 100%; padding:0;margin:0;">
+
+   <center> <div class="container" style="background-color:white;
+                                        width:75%;
+                                        height:90%;
+                                        display: block;   resize: both;
+                                        margin-top:2%;border-radius: 15px;
+  overflow: auto; ">
+        <CENTER><h1 style="font-size:35; padding-top:10;">Crop Recommendation System</h1></CENTER>
+                      <div class="navbar">
+  <a href="">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="crop_predictor">Crop Predictor</a>
+        <a href="weather_forecast">Weather Forecast</a>
+      <a href="news">Latest News</a>
+
+    </div>
+
+  </div>
+           <a href="about_us">About Us</a>
+</div>
+      <div style="float:left; margin-left:3%;width:46%;border-radius: 5px; ">
+  <img src="{{url_for('static', filename='images/farmer.jpg')}}" style="width:100%;height:65%;border-radius: 5px;">
+
+</div>
+<div style="float:left;  height:65%;width:46%;background-color:#ffff00;border-radius: 5px;   overflow:hidden; ">
+    <br>
+    <br>
+    <br>
+    <p style="font-family:Capriola; padding:15; resize:both;">Our Artificial Intelligence-based Crop Recommendation System helps you predict the right crop based on soil requirements to increase productivity and acquire profits.
+    <br><br> Our primary objective is to deliver direct advisory services to even the smallest farmer at the level of his/her smallest plot of crop</p>
+</div>
+
+   </div></center>
+
+    </body>
+</html>
